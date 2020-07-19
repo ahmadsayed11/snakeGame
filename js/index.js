@@ -1,7 +1,11 @@
 let restartBtn = document.getElementById(`overLayBtn`);
+
 let overLayDiv = document.getElementById(`overlay`);
+
 const cnvs = document.getElementById(`canvas`);
+
 const ctx = cnvs.getContext(`2d`);
+
 
 
 // unit of measuring is onebox equals 32 px
@@ -12,19 +16,29 @@ const box = 32;
 // load images
 
 const groundImg = new Image();
+
 groundImg.src = `img/ground.png`;
 
+
 const foodPic = new Image();
+
 foodPic.src = `img/food.png`;
+
 
 // load audio files
 
 let gameOver = new Audio();
+
 let increment = new Audio();
+
 let up = new Audio();
+
 let right = new Audio();
+
 let left = new Audio();
+
 let down = new Audio();
+
 
 gameOver.src = `audio/dead.mp3`;
 increment.src = `audio/eat.mp3`;
